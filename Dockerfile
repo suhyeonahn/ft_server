@@ -14,7 +14,7 @@ RUN rm /etc/nginx/sites-enabled/default
 RUN echo "<?php phpinfo(); ?>" >> /var/www/html/phpinfo.php
 
 RUN mkdir -p /run/php && touch /run/php/php7.3-fpm.sock
-RUN chown www-data:www-data /run/php/php7.3-fpm.sock 
+#RUN chown www-data:www-data /run/php/php7.3-fpm.sock 
 
 CMD servic mysql start
 RUN echo "CREATE DATABASE suahn;" | mysql -u root --skip-password
