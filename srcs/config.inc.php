@@ -13,7 +13,7 @@
  * This is needed for cookie based authentication to encrypt password in
  * cookie. Needs to be 32 chars long.
  */
-$cfg['blowfish_secret'] = 'abcdefghijklmnopqrstuvwxyz123456'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = 'sm0lknO3sIA1C//2VbC/XHOUI83JYc}Q'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 /**
  *  * Servers configuration
  *   */
@@ -32,7 +32,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
  * phpMyAdmin configuration storage settings.
  */
 /* User used to manipulate with storage */
-//$cfg['Servers'][$i]['controlhost'] = '';
+//$cfg['Servers'][$i]['controlhost'] = 'localhost';
 // $cfg['Servers'][$i]['controlport'] = '';
 // $cfg['Servers'][$i]['controluser'] = 'pma';
 // $cfg['Servers'][$i]['controlpass'] = 'pmapass';
