@@ -17,7 +17,7 @@ RUN mv phpMyAdmin-4.9.1-english phpmyadmin
 RUN wget https://wordpress.org/latest.tar.gz
 RUN tar -zxvf latest.tar.gz && rm -rf latest.tar.gz
 
-#COFIG NGINX
+#CONFIG NGINX
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 COPY srcs/nginx-host-conf /etc/nginx/sites-available/localhost
 RUN cp /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/localhost
