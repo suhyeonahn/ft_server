@@ -6,7 +6,7 @@ echo "CREATE USER 'user'@'localhost' IDENTIFIED BY 'suahn';" | mysql -u root
 echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost' IDENTIFIED BY 'suahn'" | mysql -u root
 echo "FLUSH PRIVILEGES;" | mysql -u root
 
-#ACCESS PERMISSIONTO TO SERVICE
+#ACCESS PERMISSION TO SERVICE
 chown -R www-data:www-data /var/www
 chmod -R 755 /var/www
 
